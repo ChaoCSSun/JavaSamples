@@ -14,6 +14,7 @@ public class ListDemo {
     }
 
     private static List<String> initData() {
+
         mList = new ArrayList<String>();
 
         for (int i = 0; i < 30; i++) {
