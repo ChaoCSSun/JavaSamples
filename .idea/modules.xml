@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlogAndDataStruct/AlogAndDataStruct.iml" filepath="$PROJECT_DIR$/AlogAndDataStruct/AlogAndDataStruct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/designpatterns/DesignPatterns.iml" filepath="$PROJECT_DIR$/designpatterns/DesignPatterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSamples.iml" filepath="$PROJECT_DIR$/JavaSamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
