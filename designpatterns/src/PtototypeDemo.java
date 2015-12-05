@@ -1,6 +1,6 @@
 /**
  * 原型模式
- *
+ * clone
  * http://www.importnew.com/6907.html
  * Created by Tikitoo on 2015/12/3.
  */
