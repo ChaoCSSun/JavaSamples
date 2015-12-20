@@ -8,6 +8,7 @@ package leetcode;
  * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
  * Output: 7 -> 0 -> 8
  *
+ * http://www.jiuzhang.com/solutions/add-two-numbers/
  * Created by Tikitoo on 2015/12/19.
  */
 public class AddTwoNumbers {
@@ -15,18 +16,16 @@ public class AddTwoNumbers {
     private static StringBuffer sb = new StringBuffer();
 
     public static void main(String[] args) {
-        ListNode l1 = new ListNode(4);
+        ListNode l1 = new ListNode(2);
         ListNode point= l1;
-        point.next = new ListNode(7);
-        point = point.next;
         point.next = new ListNode(9);
 //        point = point.next;
 
-        ListNode l2 = new ListNode(5);
+        ListNode l2 = new ListNode(3);
         point = l2;
-        point.next = new ListNode(6);
+        point.next = new ListNode(5);
         point = point.next;
-        point.next = new ListNode(4);
+        point.next = new ListNode(7);
 
         ListNode node = addTwoNums(l1, l2);
         System.out.println(iterNode(node));
@@ -77,10 +76,7 @@ public class AddTwoNumbers {
         if (carry != 0) {
             point.next = new ListNode(carry);
         }
-
         return head.next;
-
-
     }
 
 }
@@ -92,7 +88,4 @@ class ListNode {
     ListNode(int x) {
         val = x;
     }
-
-
-
 }

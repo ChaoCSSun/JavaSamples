@@ -1,0 +1,48 @@
+package leetcode;
+
+/**
+ * 回文数(对称数)
+ *
+ * http://www.programcreek.com/2013/12/leetcode-solution-of-longest-palindromic-substring-java/
+ * Created by Tikitoo on 2015/12/19.
+ */
+public class PalindromicSubString {
+    public static void main(String[] args) {
+        System.out.println(longestPalindrome("abcdefdfadfadfdasf"));
+    }
+
+    public static String longestPalindrome(String s) {
+        if (s.isEmpty()) {
+            return null;
+        }
+        if (s.length() == 1) {
+            return s;
+        }
+
+        String longest = s.substring(0, 1);
+        for (int i = 0; i < s.length(); i++) {
+            // 奇数，中间一个数为中间
+            String tmp = helper(s, i, i);
+            if (tmp.length() > longest.length()) {
+                longest = tmp;
+            }
+
+            // 偶数，中间两个数为中间
+            tmp = helper(s, i, i + 1);
+            if (tmp.length() > longest.length()) {
+                longest = tmp;
+            }
+        }
+        return longest;
+
+    }
+
+    public static String helper(String s, int begin, int end) {
+        while (begin >= 0 && end <= s.length() - 1
+                && s.charAt(begin) == s.charAt(end)) {
+            begin--;
+            end++;
+        }
+        return s.substring(begin + 1, end);
+    }
+}
