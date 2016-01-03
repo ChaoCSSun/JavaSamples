@@ -6,6 +6,8 @@ package leetcode;
  * P   A   H   N
  * A P L S I I G
  * Y   I   R
+ * 思路：分为三行，每次循环四个数，第一行，第三方。遍历每次加四。第二行，每次有二四。
+ * http://www.programcreek.com/2014/05/leetcode-zigzag-conversion-java/
  * Created by Tikitoo on 2015/12/19.
  */
 public class ZigZagConversion {
